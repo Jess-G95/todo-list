@@ -89,8 +89,7 @@ function render() {
     renderLists()
     const selectedList = lists.find(list => list.id === selectedListId)
     if (selectedListId == null) {
-        document.getElementById(test).style.display = "none";
-        //listDisplayContainer.style.display = 'none'
+        listDisplayContainer.style.display = 'none'
     } else {
         listDisplayContainer.style.display = ''
         listTitleElement.innerText = selectedList.name
